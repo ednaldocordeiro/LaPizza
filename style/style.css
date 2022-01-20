@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600&display=swap');
+:root{
+  --green: #5C913B;
+  --yellow: #FFA200;
+  --red: #CF3031;
+  --pink: #FFD4C9;
+
+  --white: #FEF6F4;
+  --gray: #616161;
+  --gray-200: #2E2E2E;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  border: 0;
+  font-family: 'Sora', sans-serif;
+}
+html{
+  font-size: 62.5%;
+}
+body{
+  width: 100%;
+}
+
+header{
+  width: 100%;
+  padding: 15rem 0;
+  font-size: 9.6rem;
+  color: var(--white);
+  text-align: center;
+  background: url(../assets/background.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#yellow{
+  color: var(--yellow);
+}
+#red{
+  color: var(--red);
+}
+#green{
+  color: var(--green);
+}
+
+main{
+  color: var(--gray-200);
+}
+h2, main span{
+  font-size: 3.2rem;
+}
+h3{
+  font-size: 1.8rem;
+}
+p, footer{
+  font-size: 1.4rem;
+  color: var(--gray);
+}
+a{
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: var(--gray-200);
+  font-weight: 600;
+}
+
+#best_sellers{
+  text-align: center;
+  padding: 14rem 16rem 0;
+  margin: 0 0 19rem;
+  position: relative;
+}
+#best_sellers > div{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: relative;
+}
+.information{
+  width: 100%;
+  height: auto;
+  border-radius: 3rem;
+  padding: 8rem 0 4rem;
+  background: var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.information p{
+  margin: 1rem 0 3rem;
+}
+.card{
+  width: 25rem;
+}
+.card img{
+  position: relative;
+  top: 60px;
+}
+button{
+  width: 15rem;
+  height: 3rem;
+  border-radius: 2rem;
+  background: var(--yellow);
+  position: relative;
+  top: -15px;
+}
+
+#about{
+  padding: 5rem 16rem;
+  display: flex;
+  align-items: center;
+  background: #fcfcfc;
+  position: relative;
+}
+#about div{
+  width: 46rem;
+  margin: 0 0 0 7rem;
+  position: relative;
+}
+#about div p{
+  margin: 2.5rem 0;
+  line-height: 26px;
+}
+
+footer{
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 2rem 0;
+
+}
+
+.absolute{
+  position: absolute;
+}
+#img1{
+  left: -225px;
+  top: -240px;
+}
+#img2{
+  left: 260px;
+  top: -110px;
+}
+#img3{
+  right: 30px;
+  top: -110px;
+}
+#img4{
+  right: -80px;
+  top: 155px;
+  z-index: -1;
+}
+#img5{
+  left: -140px;
+  top: 400px;
+}
+#img6{
+  right: 0px;
+  bottom: -230px;
+  z-index: 1;
+}
+#img7{
+  left: 78px;
+  top: 100px;
+}
+#img8{
+  right: 50px;
+  z-index: 0;
+}
+
+@media (max-width: 1320px){
+  #best_sellers > div {
+    justify-content: center;
+  }
+  .card{
+    margin: 5rem;
+  }
+  #img2{
+    left: initial;
+    right: 600px;
+  }
+}
+@media (max-width: 1210px){
+  #img8{
+    right: -25px;
+    bottom: -170px;
+  }
+}
+@media (max-width: 1100px){
+  #about{
+    flex-direction: column;
+  }
+  #about img:nth-child(2){
+    width: 100%;
+    height: 45rem;
+    object-fit: cover;
+  }
+  #about div{
+    width: 100%;
+    margin: 3rem 0 0;
+  }
+  #img8{
+    bottom: -105px;
+  }
+}
+@media (max-width: 1000px){
+  .card {
+    width: 100%;
+  }
+}
+@media (max-width: 980px){
+  #img8{
+    right: -150px;
+  }
+}
+@media (max-width: 750px){
+  header{
+    font-size: 7rem;
+  }
+}
+@media (max-width: 600px){
+  header{
+    font-size: 10vw;
+  }
+  #best_sellers, #about{
+    padding: 10vw;
+  }
+  .absolute{
+    max-width: 45vw;
+  }
+  #img4{
+    right: -15px;
+  }
+  #img5{
+    top: initial;
+  }
+  #img7{
+    top: -35px;
+  }
+  #img8{
+    right: -50px;
+    max-width: 45vw;
+  }
+}
+@media (max-width: 550px){
+  #img8{
+    right: -15px;
+    top: 200px;
+  }
+}
+@media (max-width: 450px){
+  #img6{
+    bottom: 400px;
+  }
+  #img8{
+    width: 0;
+  }
+}
