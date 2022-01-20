@@ -1,5 +1,5 @@
 # LaPizza 🍕
-<p><a href="home.png"></p>
+<p><a href="home.png"></a></p>
 
   ## 🖥 Projeto
   Projeto desenvolvido para fins de prática e desenvolvimento dos conhecimentos de HTML e CSS
