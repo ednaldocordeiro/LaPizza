@@ -9,7 +9,7 @@
   As tecnologias usadas nesse projeto foram:
   - [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
   - [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
-  - [JS](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+<p></p>
 
   ## 🖇 Executar o Projeto
   Para executar o projeto <a href="https://ednaldo-byte.github.io/LaPizza/">clique aqui</a>
